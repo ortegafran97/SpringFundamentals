@@ -28,11 +28,17 @@ public class Producto {
 
     private Boolean estado;
 
+    @ManyToOne
+    @JoinColumn(name="id_categoria", insertable = false,updatable = false)
+    private Categoria categoria;
+
+
+    //Getters & Setters
+
     public Integer getIdProducto() {
         return idProducto;
     }
 
-    //Getters & Setters
     public void setIdProducto(Integer idProducto) {
         this.idProducto = idProducto;
     }
