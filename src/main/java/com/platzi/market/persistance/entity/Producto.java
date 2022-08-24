@@ -5,8 +5,6 @@ import javax.persistence.*;
 @Entity
 @Table(name="productos")
 public class Producto {
-
-    // Attributes
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_producto")
